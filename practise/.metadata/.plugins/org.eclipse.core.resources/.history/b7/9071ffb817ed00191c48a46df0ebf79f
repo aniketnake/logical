@@ -1,0 +1,14 @@
+package LogicalProgramming;
+
+import java.util.Scanner;
+
+public class SumFromAlphaNumeric {
+
+	public static void main(String[] args) {
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter the alphanumeric String::");
+		String input = scr.next();
+
+	}
+
+}

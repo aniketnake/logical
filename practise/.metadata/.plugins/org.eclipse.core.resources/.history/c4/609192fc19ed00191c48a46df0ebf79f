@@ -1,0 +1,29 @@
+package LogicalProgramming;
+
+import java.util.Scanner;
+
+public class SumFromAlphaNumeric {
+
+	public static void main(String[] args) {
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter the alphanumeric String::");
+		String input = scr.next();
+
+		int sum = 0;
+		String num = "";
+		for (int i = 0; i < input.length(); i++) {
+			// isDigit check the given character is digit or not
+			if (Character.isDigit(input.charAt(i))) {
+				num = num + input.charAt(i);
+			} else {
+				if (!num.equals("")) {
+					sum = sum + Integer.parseInt(num);
+					num = "";
+				}
+			}
+		}
+
+		System.out.println(sum);
+	}
+
+}

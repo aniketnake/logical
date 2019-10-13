@@ -1,0 +1,18 @@
+package Oct_thirteen;
+
+import java.util.Scanner;
+
+public class PrintAlphaFromAlphanumeric {
+
+	public static void main(String[] args) {
+
+		Scanner src = new Scanner(System.in);
+		System.out.println("Enter Alphanumeric String");
+		String input = src.next();
+
+		String output = input.replaceAll("[^a-zA-Z]+", "");
+		System.out.println(output);
+
+	}
+
+}
