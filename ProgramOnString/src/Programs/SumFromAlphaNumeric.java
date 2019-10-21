@@ -1,4 +1,4 @@
-package Oct_thirteen;
+package Programs;
 
 import java.util.Scanner;
 
